@@ -4,8 +4,8 @@ import Document, {
   Html,
   Main,
   NextScript,
+  Head,
 } from 'next/document';
-import Head from 'next/head';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -41,9 +41,7 @@ export default class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="en-US">
-        <Head>
-          <title></title>
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
