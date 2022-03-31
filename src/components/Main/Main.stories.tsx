@@ -1,19 +1,17 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { ComponentMeta, Story } from '@storybook/react';
 import Main from '.';
 
 export default {
   title: 'Main',
   component: Main,
-  decorators: [withKnobs],
+  args: {
+    title: 'Default title',
+    description: 'Default description',
+  },
 } as ComponentMeta<typeof Main>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Main> = (args) => <Main {...args} />;
-
-export const Basic = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+export const Basic: Story = (args) => <Main {...args} />;
 Basic.args = {
-  title: 'Test',
-  description: 'Description',
+  title: 'Basic title',
+  description: 'Basic description',
 };
