@@ -11,7 +11,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <meta
           name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled components"
+          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
         />
       </Head>
       <GlobalStyles />
