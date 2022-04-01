@@ -5,7 +5,7 @@ type Props = {
   description?: string;
 };
 
-const Main = ({
+const Main: React.FC<Props> = ({
   title = 'Advanced React',
   description = 'TypeScript, ReactJS, NextJS and Styled Components',
 }: Props) => (
